@@ -9,14 +9,14 @@
 Pod::Spec.new do |s|
   s.name         = "AutoLayoutShake"
   s.homepage     = "https://github.com/nzaghini/AutoLayoutShake"
-  s.version      = "0.1.0"
+  s.version      = "0.0.1"
   s.summary      = "AutoLayoutShake is a small library to help the debug of autoLayout constraints."
   s.license      = { :type => "MIT", 
 					 :text => <<-LICENSE
 					 LICENSE
 				   }
   s.author       = 'nzaghini'
-  s.source       = { :git => "https://github.com/nzaghini/AutoLayoutShake.git", :tag => "0.1.0"}
+  s.source       = { :git => "https://github.com/nzaghini/AutoLayoutShake.git", :tag => s.version.to_s}
   s.platform     = :ios, '6.0'
   s.source_files = 'Classes/NZAutoLayoutShake.{h,m}'
   s.public_header_files = 'Classes/NZAutoLayoutShake.h'

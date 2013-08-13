@@ -20,13 +20,13 @@
   return sharedInstance;
 }
 
-- (void)triggerShakeForAmbiguousLayout;
+- (void)triggerShakeAmbiguousLayout;
 {
   BOOL shaking = _ambiguousViews != nil;
-  [self shakeForAbiguosLayout:!shaking];
+  [self shakeAbiguosLayout:!shaking];
 }
 
-- (void)shakeForAbiguosLayout:(BOOL)shake;
+- (void)shakeAbiguosLayout:(BOOL)shake;
 {
   self.ambiguousViews = nil;
   
@@ -35,7 +35,6 @@
     [self findAmbiguousViewStartingFrom:[[UIApplication sharedApplication] keyWindow] foundViews:tmpViews];
     self.ambiguousViews = tmpViews;
     
-    [self printDetailsOnAmbiguity];
     [self addShakeAction];
   }
 }
@@ -48,16 +47,6 @@
 
   [view.subviews enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
     [self findAmbiguousViewStartingFrom:obj foundViews:ambiguosLayoutViews];
-  }];
-}
-
-- (void)printDetailsOnAmbiguity
-{
-  [_ambiguousViews enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
-    NSLog(@"View: %@ \nHorizontal: %@ \nVertical: %@",
-          obj,
-          [obj constraintsAffectingLayoutForAxis:UILayoutConstraintAxisHorizontal],
-          [obj constraintsAffectingLayoutForAxis:UILayoutConstraintAxisVertical]);
   }];
 }
 
