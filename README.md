@@ -1,14 +1,12 @@
 AutoLayoutDance
 ===============
 
-This is a pretty quick (<100 lines) way to debug your AutoLayout ambiguos layout constraints.
-Use a trigger to activate the dance of your ambiguous views to visually figure out which constraints are missing.
+A pretty quick (<100 lines) tool to debug your AutoLayout ambiguos layout.
 
-To use it in your code simply call 
-<code>
-[[NZAutoLayoutDance sharedInstance] triggerDanceOnAmbiguousLayout];
-<code>
+1. Add the pod to your podfile <code>pod 'AutoLayoutDance', '0.0.1'</code>
+2. Trigger the dance with <code>[[NZAutoLayoutDance sharedInstance] triggerDanceOnAmbiguousLayout];</code>
+3. Visually figure out which constraints are missing
 
-You can also log the description of NZAutoLayoutDance instance to effectively see which constraints, on Horizontal and Vertical axes, are affecting your layout.
+In the provided demo, AutoLayoutShakeDemo, the shake gesture is used as a trigger to start the dance!
 
-In the provided demo the actual trigger is the shake gesture, which I think fits good with the dance! 
+Have fun!
