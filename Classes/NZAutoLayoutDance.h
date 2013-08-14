@@ -1,5 +1,5 @@
 //
-//  UIView+NZAutoLayoutShake.h
+//  UIView+NZAutoLayoutDance.h
 //  AutoLayoutShake
 //
 //  Created by Nicola Zaghini on 8/12/13.
@@ -8,20 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
-@interface NZAutoLayoutShake : NSObject
+@interface NZAutoLayoutDance : NSObject // dance
 
 /*
  * Gets a singleton instance
  */
 + (id)sharedInstance;
 /*
- * Starts / Stops the 'exerciseAmbiguityInLayout'
+ * Triggers the dance functionality (on/off)
  */
-- (void)shakeAbiguosLayout:(BOOL)shake;
-/*
- * Triggers the shake functionality (on/off)
- */
-- (void)triggerShakeAmbiguousLayout;
+- (void)triggerDanceOnAmbiguousLayout;
 
 /*
  * The list of views where 'hasAmbiguousLayout' is true,

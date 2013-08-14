@@ -1,0 +1,9 @@
+platform :ios, '6.0'
+
+#Should enable this before ending with this stuff, so the Pods project wont generate warnings
+inhibit_all_warnings!
+
+target :"AutoLayoutShakeDemo", :exclusive => true do
+  pod 'AutoLayoutDance', :path => '~/Documents/iOSDev/AutoLayoutDance'
+end
+
