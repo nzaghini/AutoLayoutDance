@@ -1,5 +1,5 @@
 //
-//  UIView+NZAutoLayoutDance.h
+//  NZAutoLayoutDance.h
 //  AutoLayoutShake
 //
 //  Created by Nicola Zaghini on 8/12/13.
@@ -20,7 +20,7 @@
 - (void)triggerDanceOnAmbiguousLayout;
 
 /*
- * The list of views where 'hasAmbiguousLayout' is true,
+ * The list of views with ambiguous layout,
  * Availale only when shaking, nil otherwise
  */
 @property (nonatomic, strong) NSArray* ambiguousViews;

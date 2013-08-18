@@ -15,7 +15,6 @@
 		B396437B17BB69CA002C4903 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B396437A17BB69CA002C4903 /* main.m */; };
 		B396437F17BB69CA002C4903 /* NZAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B396437E17BB69CA002C4903 /* NZAppDelegate.m */; };
 		B396438217BB69CA002C4903 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B396438017BB69CA002C4903 /* Main_iPhone.storyboard */; };
-		B396438517BB69CA002C4903 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B396438317BB69CA002C4903 /* Main_iPad.storyboard */; };
 		B396438D17BB69CA002C4903 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B396438C17BB69CA002C4903 /* Images.xcassets */; };
 		B396439417BB69CA002C4903 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B396439317BB69CA002C4903 /* XCTest.framework */; };
 		B396439517BB69CA002C4903 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B396436E17BB69CA002C4903 /* Foundation.framework */; };
@@ -50,7 +49,6 @@
 		B396437D17BB69CA002C4903 /* NZAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NZAppDelegate.h; sourceTree = "<group>"; };
 		B396437E17BB69CA002C4903 /* NZAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NZAppDelegate.m; sourceTree = "<group>"; };
 		B396438117BB69CA002C4903 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		B396438417BB69CA002C4903 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		B396438C17BB69CA002C4903 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B396439217BB69CA002C4903 /* AutoLayoutShakeDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutoLayoutShakeDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B396439317BB69CA002C4903 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -127,7 +125,6 @@
 				B396437D17BB69CA002C4903 /* NZAppDelegate.h */,
 				B396437E17BB69CA002C4903 /* NZAppDelegate.m */,
 				B396438017BB69CA002C4903 /* Main_iPhone.storyboard */,
-				B396438317BB69CA002C4903 /* Main_iPad.storyboard */,
 				B396438C17BB69CA002C4903 /* Images.xcassets */,
 				B396437517BB69CA002C4903 /* Supporting Files */,
 			);
@@ -253,7 +250,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B396438517BB69CA002C4903 /* Main_iPad.storyboard in Resources */,
 				B396438D17BB69CA002C4903 /* Images.xcassets in Resources */,
 				B396438217BB69CA002C4903 /* Main_iPhone.storyboard in Resources */,
 				B396437917BB69CA002C4903 /* InfoPlist.strings in Resources */,
@@ -348,14 +344,6 @@
 			name = Main_iPhone.storyboard;
 			sourceTree = "<group>";
 		};
-		B396438317BB69CA002C4903 /* Main_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B396438417BB69CA002C4903 /* Base */,
-			);
-			name = Main_iPad.storyboard;
-			sourceTree = "<group>";
-		};
 		B396439C17BB69CA002C4903 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -443,12 +431,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Paschal Nee (2F3926BSCC)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AutoLayoutShakeDemo/AutoLayoutShakeDemo-Prefix.pch";
 				INFOPLIST_FILE = "AutoLayoutShakeDemo/AutoLayoutShakeDemo-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -459,12 +448,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Paschal Nee (2F3926BSCC)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AutoLayoutShakeDemo/AutoLayoutShakeDemo-Prefix.pch";
 				INFOPLIST_FILE = "AutoLayoutShakeDemo/AutoLayoutShakeDemo-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

@@ -1,5 +1,5 @@
 //
-//  UIView+NZAutoLayoutDance.m
+//  NZAutoLayoutDance.m
 //  AutoLayoutDance
 //
 //  Created by Nicola Zaghini on 8/12/13.
