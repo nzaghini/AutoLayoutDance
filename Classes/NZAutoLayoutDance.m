@@ -17,7 +17,7 @@
   static NZAutoLayoutDance *sharedInstance = nil;
   static dispatch_once_t onceToken;
   dispatch_once(&onceToken, ^{
-    sharedInstance = [[NZAutoLayoutDance alloc] init];
+    sharedInstance = [[[self class] alloc] init];
   });
   return sharedInstance;
 }
